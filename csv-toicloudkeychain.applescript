@@ -37,9 +37,9 @@ repeat with i from 1 to length of recs
 	
 	-- ignore empty lines on the csv file
 	if item i of recs is not "" then
-		set kcURL to text item 1 of (item i of recs)
-		set kcUsername to text item 2 of (item i of recs)
-		set kcPassword to text item 3 of (item i of recs)
+		set kcURL to text item 2 of (item i of recs)
+		set kcUsername to text item 3 of (item i of recs)
+		set kcPassword to text item 4 of (item i of recs)
 		
 		-- repeat eatch entry until successfull (sometimes the screen locks mid-operation)
 		repeat until (done)
